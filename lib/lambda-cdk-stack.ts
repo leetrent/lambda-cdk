@@ -16,7 +16,7 @@ export class LambdaCdkStack extends cdk.Stack {
 
     const helloHandler = new Function(this, 'HelloHandler', {
       runtime: Runtime.NODEJS_14_X,
-      code: Code.fromAsset('lamda'),
+      code: Code.fromAsset('lambda'),
       handler: 'hello.handler'
     });
   }
